@@ -5,7 +5,7 @@ RANLIB=ranlib
 USESSL=mbed
 
 #CFLAGS=-Wall -Wpointer-arith -O2 -g -mtune=core2
-CFLAGS=-Wall -Wpointer-arith -O2 -g -fno-stack-protector -fomit-frame-pointer -mtune=core2 -I../sqlite -DP_ELECTRON -fPIC
+CFLAGS=-Wall -Wpointer-arith -O2 -g -fno-stack-protector -fomit-frame-pointer -mtune=core2 -I../sqlite -DP_ELECTRON -fPIC -std=gnu17 -Wno-int-conversion -Wno-incompatible-pointer-types -Wno-implicit-function-declaration
 
 #CFLAGS=-Wall -Wpointer-arith -O2 -g -fsanitize=address -mtune=core2
 #CFLAGS=-Wall -Wpointer-arith -O2 -g -fsanitize=address -mtune=core2 -I../sqlite
