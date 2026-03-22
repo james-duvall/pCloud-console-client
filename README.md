@@ -14,9 +14,13 @@ Also requires
 On Ubuntu you can run the following command:  
 > sudo apt-get install cmake zlib1g-dev libboost-system-dev libboost-program-options-dev libpthread-stubs0-dev libfuse-dev libudev-dev
 
+On Fedora you can run the following command:
+> sudo dnf install cmake boost boost-devel boost-static @development-tools systemd-devel fuse fuse-devel
+
+(this package list was tested on Fedora Xfce 43 and may need to be modified for other Fedora spins or versions)
+
 ## Build steps
 
-> sudo apt-get install cmake zlib1g-dev libboost-system-dev libboost-program-options-dev libpthread-stubs0-dev libfuse-dev libudev-dev fuse build-essential git
 > mkdir console-client   
 > git clone https://github.com/pcloudcom/console-client.git ./console-client/  
 > cd ./console-client/pCloudCC/   
